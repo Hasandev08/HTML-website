@@ -1,0 +1,63 @@
+.header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3rem;
+}
+.header .logo img {
+  width: 32rem;
+  height: 3rem;
+}
+@media only screen and (max-width: 426px) {
+  .header {
+    padding: 0px 10px;
+  }
+  .header .logo img {
+    width: 200px;
+    height: 20px;
+    padding: 0px 20px;
+  }
+}
+.login-buttons {
+  display: flex;
+  height: 2rem;
+}
+.login-buttons button {
+  background-color: #1461ae;
+  padding: 0px 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.login-buttons .login {
+  border-radius: 5px 0px 0px 5px;
+  font-size: 12px;
+  border-right: 1px solid white;
+}
+.login-buttons .signup {
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+}
+.login-buttons .login:hover {
+  background-color: #ff0000;
+}
+.login-buttons .signup:hover {
+  background-color: #ff0000;
+}
+.navbar {
+  margin-top: 10px;
+  padding: 10px 40px;
+  background-color: #1461ae;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 16px;
+}
+.collapse {
+  display: flex;
+  justify-content: space-between;
+}
+.form-control {
+  width: 18rem;
+  padding-bottom: 7px;
+}
