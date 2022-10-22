@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https:maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -17,9 +17,9 @@
 <body>
   <div class="background">
     <div class="header">
-      <div class="logo">
+      <a class="logo" href="#">
         <img src="images/logo.png" alt="Compare My Goods" />
-      </div>
+      </a>
       <div class="login-buttons">
         <button class="login">Login</button>
         <button class="signup">Signup</button>
@@ -47,12 +47,91 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search" />
+            <button class="search-button" type="submit">
+              <img src="images/search.png" alt="" />
+            </button>
           </form>
         </div>
       </div>
     </nav>
+    <div class="crumbs">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#">Home</a>
+            <p>></p>
+            <a class="nav-link" href="#">Cameras</a>
+            <p>></p>
+            <a class="nav-link" href="#">Auxiliary Lens</a>
+            <p>></p>
+            <a class="nav-link" href="#">1 NIKKOR VR 10-100mm f/4.5-5.6 PD-ZOOM 3318</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="display">
+      <div class="products">
+        <div class="product-image">
+          <img src="images/camera.png" alt="product" />
+          <div class="image-footer">
+            <p>Product Details</p>
+          </div>
+        </div>
+        <div class="product-credentials">
+          <h4>1 NIKKOR VR 10-100MM F/4.5-5.6 PD-ZOOM 3318</h4>
+          <h5><img src="images/checked.png" alt="Checked" /> In Stock</h5>
+          <p>
+            Optimized for Nikon 1 CX-format system, Compact 10-100mm (27-270mm equivalent in 35mm
+            format), 10x Power drive zoom
+          </p>
+        </div>
+        <div class="product-information">
+          <div class="product-info">
+            <h5>Product Information</h5>
+            <p>Manufacturer: <b>NIKON</b></p>
+            <p>Manufacturer Code: <b>3318</b></p>
+          </div>
+          <div class="product-ratings">
+            <h5>Product Ratings</h5>
+            <div class="stars">
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+              <input type="radio" name="star" id="star1"><label for="star1"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-list">
+        <div class="list">
+          <img src="images/check-mark.png" alt="check-mark">
+          <p>Add to Compare</p>
+          <img src="images/plus.png" alt="plus">
+          <p>Add to Wishlist</p>
+          <img src="images/warning.png" alt="warning">
+          <p>Add Price Alert</p>
+          <img src="images/email.png" alt="email">
+          <p>Email a Friend</p>
+        </div>
+        <div class="social-buttons">
+          <button style="background-color: #1461ae;"><img src="images/facebook.png" alt="facebook"> Share</button>
+          <button style="background-color: #1DA1F2;"><img src="images/twitter.png" alt="twitter"> Tweet</button>
+          <button style="background-color: #f26419;"><img src="images/gmail.png" alt="gmail"> Share</button>
+          <button style="background-color: #0077B5;"><img src="images/linkedin.png" alt="linkedin"> Share</button>
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            Everything you need to know about the product
+          </span>
+        </div>
+      </nav>
+    </div>
   </div>
 </body>
 
