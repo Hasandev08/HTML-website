@@ -1,3 +1,17 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .header {
   margin-top: 1rem;
   display: flex;
@@ -104,9 +118,14 @@
   padding: 3rem 0px 5rem 2rem;
 }
 .product-image .carousel-inner img {
-  max-width: 12rem;
   height: 10rem;
+  max-width: 10rem;
 }
+
+.carousel-inner  {
+  max-width: 10rem;
+}
+
 .product-image p {
   padding: 20px 10px 10px 40px;
   color: #1461ae;
@@ -241,8 +260,8 @@
   flex-direction: row;
 }
 .deals {
-  width: 90%;
-  margin: auto auto 3rem 4rem;
+  width: 100%;
+  margin: auto auto 1rem 1rem;
 }
 .deals .product-heading {
   background-color: #f2f5fa;
@@ -255,6 +274,7 @@
 }
 .deals-body {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 .deals-body .left {
@@ -262,6 +282,9 @@
   border-radius: 5px;
   background-color: #f2f5fa;
   border: 1px solid #cfcfcf;
+  width: 22%;
+  justify-content: center;
+  align-items: center;
 }
 .deals-body .left .header {
   border-bottom: 1px solid #cfcfcf;
@@ -343,12 +366,12 @@
 .right-deals {
   display: flex;
   border-radius: 5px;
-  border: 3px solid #cfcfcf;
+  border: 1px solid #cfcfcf;
 }
 .right-deals .package {
   display: flex;
   justify-content: space-around;
-  border-right: 3px solid #cfcfcf;
+  border-right: 1px solid #cfcfcf;
 }
 .right-deals .package img {
   width: 4rem;
@@ -770,7 +793,7 @@
   }
   .deals-body .right-deals .package {
     border-right: none;
-    border-bottom: 3px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
   }
   .deals-body .right-deals .package-image img {
     width: 3rem;
@@ -886,7 +909,7 @@
   }
   .deals .deals-body .right-deals .package {
     border-right: none;
-    border-bottom: 3px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
   }
   .page-footer .footer-elements .column {
     margin: 20px 0px;
@@ -914,7 +937,7 @@
   }
   .right-deals .package {
     display: flex;
-    border-right: 3px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
   }
   .right-deals .package img {
     width: 4rem;
@@ -940,5 +963,31 @@
     width: 1.5rem;
     height: 1.5rem;
     margin: 5px 5px 10px 18rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-container  {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .main-container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .main-container {
+    max-width: 1320px;
   }
 }
