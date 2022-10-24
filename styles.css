@@ -353,13 +353,13 @@
 .right-deals .package img {
   width: 4rem;
   height: 4rem;
-  margin: 10px 5rem auto 10px;
+  margin: 35px 5rem 0px 10px !important;
 }
 .right-deals .package .net {
-  margin: 10px 5rem auto 10px;
+  margin: 35px 5rem 0px 10px !important;
 }
 .right-deals .package .minutes {
-  margin: 10px 2rem auto 10px;
+  margin: 35px 2rem 0px 10px !important;
 }
 .right-deals .product-cost .all-costs {
   display: flex;
@@ -404,16 +404,25 @@
 }
 .details {
   margin: 1rem 0 0 15rem;
+  display: flex;
 }
-.details h4 {
+.details .left-details {
+  margin-right: 20px;
+}
+.details .left-details h4 {
   color: #f6ae2d;
   padding: 5px 0 10px;
   border-bottom: 0.5rem solid #f6ae2d;
 }
-.details p {
-  margin-top: 2rem;
-  column-count: 2;
-  column-gap: 5rem;
+.details .left-details p {
+  text-align: justify;
+}
+.details .right-details h4 {
+  color: #d13e39;
+  padding: 5px 0 10px;
+  border-bottom: 0.5rem solid #d13e39;
+}
+.details .right-details p {
   text-align: justify;
 }
 .newsletter {
@@ -593,8 +602,23 @@
     font-size: 12px !important;
     padding: 0px 10px;
   }
-  .details p {
-    column-count: 1;
+  .details .left-details h4 {
+    font-size: 14px;
+  }
+  .details .left-details p {
+    font-size: 12px;
+  }
+  .details .right-details {
+    margin-right: 10px;
+  }
+  .details .right-details h4 {
+    font-size: 14px;
+  }
+  .details .right-details p {
+    font-size: 12px;
+  }
+  .details .right-details .package .net {
+    margin-right: 0px !important;
   }
   .newsletter #newsletter-input {
     width: 20rem;
@@ -737,7 +761,6 @@
   .deals-body .right-deals {
     display: flex;
     flex-direction: column;
-    /* margin: auto 20px; */
   }
   .deals-body .right .dropdown-popularity button {
     width: 10rem;
@@ -809,6 +832,10 @@
     padding: 0;
     text-align: center;
   }
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
   .cart-list {
     width: 90%;
   }
@@ -852,6 +879,14 @@
   }
   .details {
     margin: 1rem 0px;
+  }
+  .deals .deals-body .right-deals {
+    display: flex;
+    flex-direction: column;
+  }
+  .deals .deals-body .right-deals .package {
+    border-right: none;
+    border-bottom: 3px solid #cfcfcf;
   }
   .page-footer .footer-elements .column {
     margin: 20px 0px;
