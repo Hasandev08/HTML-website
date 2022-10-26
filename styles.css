@@ -504,6 +504,58 @@
   margin: 1rem 0 0 15rem;
   display: flex;
 }
+.compare-details {
+  margin: 1rem 0 0 15rem;
+  display: flex;
+  flex-direction: column;
+}
+.compare-mobile-heading {
+  background-color: #E7F2F8;
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  border-top: 2px solid rgb(231, 231, 231);
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+.compare-mobile-heading p {
+  margin: 0px
+}
+.compare-mobile-sub-b-heading {
+  background-color: #E7F2F8;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  border-top: 2px solid rgb(231, 231, 231);
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+.compare-mobile-sub-b-heading p {
+  margin: 0px
+}
+.compare-mobile-sub-heading {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+}
+.compare-mobile-sub-heading p {
+  margin: 0px
+}
+
+.compare-mobile-btns-wrapper {
+  background-color: #E7F2F8;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: 2px solid rgb(231, 231, 231);
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+.compare-btns {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #0169b4;
+  padding: 0.5rem;
+  width: 48%;
+  border-radius: 5px;
+}
 .details .left-details {
   margin-right: 20px;
 }
@@ -517,12 +569,57 @@
 }
 .details .right-details h4 {
   color: #d13e39;
-  padding: 5px 0 10px;
   border-bottom: 0.5rem solid #d13e39;
+  padding: 5px 0 10px;
+}
+.compare-products {
+  border-top: 0.5rem solid #d13e39;
+  padding: 5px 0 10px;
+  display: flex;
+}
+.specs {
+  border-top: 0.5rem solid #0169B4 !important;
+}
+.specs-heading {
+  color: #0169B4;
+}
+.spec-sub-heading {
+  font-size: 1.2rem;
+  color: #F074B8;
+  font-weight: 500;
+  margin-left: -1rem;
+  border-bottom: 1px solid #0169B4;
+  padding-bottom: 0.6rem;
+  margin-top: 1rem;
 }
 .details .right-details p {
   text-align: justify;
 }
+
+.spec-description {
+  margin-left: -1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.spec-description div{
+  display: flex;
+  align-items: center;
+}
+.spec-description div p{
+  margin: 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.spec-description div i{
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.spec-description i{
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
 .newsletter {
   background-color: #f2f5fa;
   padding-bottom: 3rem;
