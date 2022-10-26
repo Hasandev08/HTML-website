@@ -1,3 +1,44 @@
+.fade {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.fade.in {
+  opacity: 0.8;
+}
+
+.modal-content {
+  opacity: 1 !important;
+  background-color: #fff !important;
+  width: 100rem !important;
+  height: 10rem;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.social-buttons button {
+  border: none;
+  padding: 10px;
+  padding-right: 10px;
+  padding-left: 20px;
+  margin: 5px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.social-buttons button i {
+  font-weight: 5rem !important;
+  margin-right: 10px;
+}
+
 .container {
   border: none !important;
 }
@@ -126,7 +167,7 @@
   max-width: 10rem;
 }
 
-.carousel-inner  {
+.carousel-inner {
   max-width: 10rem;
 }
 
@@ -269,7 +310,7 @@
 .list {
   display: flex;
   flex: row;
-  font-size: 12px;
+  font-size: 16px;
 }
 .list p {
   margin-top: 10px;
@@ -279,9 +320,22 @@
   color: #f26419;
 }
 .list img {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 1.1rem;
+  height: 1.1rem;
   margin: 13px 5px 0px 20px;
+  margin-right: 10px;
+}
+.share-modal {
+  background-color: rgba(red, green, blue, 0.2) !important;
+}
+.share-modal div {
+  background-color: rgba(red, green, blue, 0.2) !important;
+}
+.list i {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 13px 5px 0px 20px;
+  margin-right: 10px;
 }
 .cost-details {
   display: flex;
@@ -327,7 +381,7 @@
   border: 1px solid #cfcfcf;
 }
 
-.filter-btns button{
+.filter-btns button {
   max-width: 5.5rem !important;
   height: 4rem !important;
   margin-right: 5px;
@@ -335,7 +389,7 @@
   margin-bottom: 1rem;
 }
 
-.filter-btns .active{
+.filter-btns .active {
   border: 2px solid #1471a7 !important;
 }
 
@@ -451,14 +505,14 @@
   position: absolute;
   right: -10px;
   top: 10px;
-  z-index: 2
+  z-index: 2;
 }
 
 .off-description {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  background-color: #F9D1DC;
+  background-color: #f9d1dc;
   padding: 5px;
   padding-right: 10px;
 }
@@ -510,7 +564,7 @@
   flex-direction: column;
 }
 .compare-mobile-heading {
-  background-color: #E7F2F8;
+  background-color: #e7f2f8;
   display: flex;
   align-items: center;
   padding: 1.2rem;
@@ -518,10 +572,10 @@
   border-bottom: 2px solid rgb(231, 231, 231);
 }
 .compare-mobile-heading p {
-  margin: 0px
+  margin: 0px;
 }
 .compare-mobile-sub-b-heading {
-  background-color: #E7F2F8;
+  background-color: #e7f2f8;
   display: flex;
   align-items: center;
   padding: 0.6rem;
@@ -529,7 +583,7 @@
   border-bottom: 2px solid rgb(231, 231, 231);
 }
 .compare-mobile-sub-b-heading p {
-  margin: 0px
+  margin: 0px;
 }
 .compare-mobile-sub-heading {
   display: flex;
@@ -537,11 +591,11 @@
   padding: 0.6rem;
 }
 .compare-mobile-sub-heading p {
-  margin: 0px
+  margin: 0px;
 }
 
 .compare-mobile-btns-wrapper {
-  background-color: #E7F2F8;
+  background-color: #e7f2f8;
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -578,17 +632,17 @@
   display: flex;
 }
 .specs {
-  border-top: 0.5rem solid #0169B4 !important;
+  border-top: 0.5rem solid #0169b4 !important;
 }
 .specs-heading {
-  color: #0169B4;
+  color: #0169b4;
 }
 .spec-sub-heading {
   font-size: 1.2rem;
-  color: #F074B8;
+  color: #f074b8;
   font-weight: 500;
   margin-left: -1rem;
-  border-bottom: 1px solid #0169B4;
+  border-bottom: 1px solid #0169b4;
   padding-bottom: 0.6rem;
   margin-top: 1rem;
 }
@@ -602,20 +656,20 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.spec-description div{
+.spec-description div {
   display: flex;
   align-items: center;
 }
-.spec-description div p{
+.spec-description div p {
   margin: 0px;
   font-size: 1.2rem;
   font-weight: 500;
 }
-.spec-description div i{
+.spec-description div i {
   font-size: 1.5rem;
   margin-right: 10px;
 }
-.spec-description i{
+.spec-description i {
   font-size: 1.3rem;
   margin-top: 2px;
 }
@@ -698,8 +752,8 @@
 }
 
 .network-icon img {
- width: 2rem;
- height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media only screen and (max-width: 376px) {
@@ -1164,7 +1218,7 @@
 }
 
 @media (min-width: 576px) {
-  .main-container  {
+  .main-container {
     max-width: 540px;
   }
 }
