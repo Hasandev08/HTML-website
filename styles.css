@@ -207,6 +207,9 @@
 .color-heading {
   margin-left: -1rem !important;
 }
+.storage-heading {
+  margin-left: -1rem !important;
+}
 
 .color-box .color-circle {
   width: 1.8rem;
@@ -214,7 +217,16 @@
   border-radius: 10rem;
   cursor: pointer;
 }
-
+.storage-box {
+  display: flex;
+}
+.storage {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  width: 4rem;
+  height: 3rem;
+  padding: 10px;
+}
 .offers {
   margin: 2rem 2rem auto auto;
 }
@@ -1032,16 +1044,6 @@
     width: 5rem;
     font-size: 10px;
   }
-  /* .deals-body .right-deals {
-    display: flex;
-    flex-direction: column;
-  } */
-  /* .deals-body .right .dropdown-popularity button {
-    width: 10rem;
-    height: 2rem;
-    font-size: 12px;
-    margin-right: 20rem !important;
-  } */
   .deals-body .right-deals .package {
     border-right: none;
     border-bottom: 1px solid #cfcfcf;
@@ -1086,6 +1088,12 @@
     padding-left: 70px;
     padding-top: 8px;
     font-size: 12px;
+  }
+  .storage {
+    padding: 0px;
+  }
+  .storage p {
+    padding: 10px 0px 0px;
   }
 }
 @media only screen and (max-width: 768px) {
